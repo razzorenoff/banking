@@ -1,0 +1,356 @@
+/*================ СОДЕРЖАНИЕ СТРАНИЦЫ ===================*/
+/*==================== слайдер ======================*/
+
+.mainscreen {
+	/* Back Main screen */
+	width: 100%;
+	height: auto;
+	background-color: rgba(136, 144, 161, 0.2);
+	margin-bottom: 60px;
+	z-index: 10;
+}
+
+.slider {
+	display: flex;
+	justify-content: space-between;
+	max-height: 590px;
+	font-family: Graphik;
+	color: rgb(0, 0, 0);
+
+	// .slider__image
+
+	&__image {
+		//position: absolute;
+		top: 0;
+		right: 0;
+		object-fit: cover;
+		@media (max-width: 479.98px) {
+			width: auto;
+			height: auto;
+			margin-right: -50px;
+		}
+	}
+}
+.content-slider {
+	position: relative;
+	overflow: hidden;
+
+	// .content-slider__left
+
+	&__left {
+		max-width: 720px;
+		@media (max-width: 479.98px) {
+			min-width: auto;
+		}
+
+		h1 {
+			@include adaptiv-font(48, 20);
+			font-weight: 700;
+			line-height: 125%;
+			margin-top: 13%;
+		}
+
+		h2 {
+			@include adaptiv-font(18, 10);
+			line-height: 125%;
+			color: #8890a1;
+			margin-top: 5%;
+		}
+		.button {
+			margin-top: 9%;
+			@media (max-width: 479.98px) {
+				width: 130px;
+				height: 45px;
+			}
+		}
+
+		.pagination {
+			margin-top: 3%;
+			margin-bottom: 15%;
+		}
+	}
+
+	// .content-slider__right
+
+	&__right {
+		align-self: flex-end;
+	}
+}
+
+/*==============  конец слайдера =============*/
+
+/*============== текст УСЛУГИ... ============*/
+.title {
+	@include adaptiv-font(35, 20);
+	font-weight: 700;
+	text-align: center;
+}
+
+/*============== блоки БРОКЕРСКОЕ ОБСЛУЖИВАНИЕ и ЕВРООБЛИГАЦИИ ============*/
+
+.fotolink-content {
+	//border: 1px solid green;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	.block-and-arrow {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		max-width: 570px;
+		width: auto;
+		margin: auto;
+		margin-top: 20px;
+		flex: 1 1 auto;
+		border: 1px solid rgba(136, 144, 161, 0.2);
+
+		.fotolink-left {
+			display: flex;
+			background: #acaccd;
+			background: url(/src/assets/img/top1.png) no-repeat right bottom #acaccd;
+			height: 360px;
+		}
+		.fotolink-right {
+			display: flex;
+			background: url(/src/assets/img/top2.png) no-repeat right bottom #bea08b;
+			height: 360px;
+		}
+	}
+}
+
+.fotolink-title {
+	color: white;
+	margin: 7% 0px 0px 29px;
+	max-width: 60%;
+
+	.title-top {
+		text-transform: uppercase;
+		font-size: 12px;
+	}
+	.title-middle {
+		margin: 16% 0px 0px 0px;
+		font-weight: bold;
+		@include adaptiv-font(25, 18);
+		line-height: 30px;
+	}
+	.title-buttom {
+		margin: 8% 0px 0px 0px;
+		@include adaptiv-font(14, 10);
+		line-height: 20px;
+	}
+}
+
+.block-arrow {
+	//border: 1px solid green;
+	display: flex;
+	justify-content: space-between;
+	background: rgba(136, 144, 161, 0.1);
+	border: 1px solid rgba(136, 144, 161, 0.2);
+	box-sizing: border-box;
+	padding: 20px 29px 20px 29px;
+	@include adaptiv-font(18, 12);
+	font-weight: 500;
+	color: #8890a1;
+	flex: 1 1 auto;
+}
+
+/*=======заголовки блоков КУРС валют и МОНЕТЫ*=======*/
+.container-title {
+	display: flex;
+	justify-content: space-between;
+	//flex-wrap: wrap;
+
+	.exchange-monets-title {
+		max-width: 570px;
+		flex-grow: 1;
+		font-size: 18px;
+
+		.block-first-title {
+			display: flex;
+			margin: 50px 0px 0px 0px;
+
+			.first-title {
+				font-weight: 500;
+				margin: 0px 20px 0px 0px;
+				color: #ff5d39;
+			}
+			.date {
+				color: #8890a1;
+			}
+		}
+	}
+}
+.exchange {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	@media (max-width: 479.98px) {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+}
+
+.money {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/*============== изображения в блоках КУРС ВАЛЮТ и МОНЕТЫ ============*/
+
+.block-foto {
+	background: white;
+	height: auto;
+	> img {
+		max-width: 100%;
+		padding: 29px;
+	}
+}
+
+/*============= блок КАРТЫ =============*/
+
+.block-cards {
+	display: flex;
+	background: url(/src/assets/img/cards.png) no-repeat right bottom rgba(136, 144, 161, 0.1);
+	margin: 30px 0px 30px 0px;
+
+	height: 270px;
+	@media (max-width: 479.98px) {
+		width: 100%;
+		height: 480px;
+	}
+}
+.slider-left {
+	display: flex;
+	max-width: 320px;
+	flex-direction: column;
+	margin: 25px 0px 25px 40px;
+	@media (max-width: 479.98px) {
+		width: auto;
+		height: 480px;
+		margin: 25px 0px 25px 20px;
+	}
+}
+
+.textlink {
+	color: #003db1;
+	font-weight: 500;
+}
+.button {
+	margin-top: 10px;
+}
+
+/*========= сайдбар 1 ======*/
+
+.sidebar-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.sidebar-column-1 {
+	display: flex;
+	background: url(/src/assets/img/fhone.png) #f4f4f6 no-repeat right bottom;
+	flex: 1 1 auto;
+	margin: 0 30px 30px 0;
+	height: 370px;
+}
+
+.sidebar-column-2 {
+	display: flex;
+	background: url(/src/assets/img/rock1.png) #f4f4f6 no-repeat right bottom;
+	flex: 1 1 auto;
+	margin: 0 0 30px 30px;
+	height: 370px;
+}
+
+.sidebar-text {
+	max-width: 350px;
+	padding: 30px 30px 0px 40px;
+}
+
+.sidebar-element-1 {
+	flex: 0 0 350px;
+	background: url(/src/assets/img/capitel.png) #f4f4f6 no-repeat right bottom;
+	margin: 0 0 30px 0px;
+}
+
+.sidebar-element-2 {
+	flex: 0 0 350px;
+	background: url(/src/assets/img/top3.png) #f4f4f6 no-repeat right bottom;
+	margin: 0 0 30px 0;
+}
+
+@media (max-width: 768px) {
+	.sidebar-column-1 {
+		margin: 0 0px 30px 0;
+		height: 380px;
+		width: 100%;
+	}
+	.sidebar-column-2 {
+		margin: 0 0px 30px 0;
+		height: 450px;
+		width: 100%;
+	}
+	.sidebar-element-1 {
+		margin: 0 0px 30px 0;
+		height: 380px;
+		width: 100%;
+		flex: 1 1 auto;
+	}
+	.sidebar-element-2 {
+		margin: 0 0px 30px 0;
+		height: 450px;
+		width: 100%;
+		flex: 1 1 auto;
+	}
+	.button {
+		width: 240px;
+		height: 45px;
+	}
+}
+
+.h1 {
+	//border: 1px solid red;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+.h2 {
+	font-size: 14px;
+	color: #8890a1;
+	line-height: 20px;
+	margin-bottom: 10px;
+
+	/*================= НОВОСТИ =================*/
+}
+
+.rss-row {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 100px;
+	width: 100%;
+
+}
+.rss-column {
+	display: flex;
+	// flex-direction: column;
+	margin: 0px 0px 20px 0px;
+	width: auto;
+	@media (max-width: 479.98px) {
+		display: block;
+	}
+
+}
+.news {
+	@include adaptiv-font(18, 12);
+	color: #8890a1;
+
+}
+.news-date {
+	margin-top: 25px;
+	margin-bottom: 10px;
+}

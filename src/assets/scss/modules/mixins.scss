@@ -1,0 +1,225 @@
+/*====================== М И К С И Н Ы ===========================*/
+//--------------------------adaptive-fontSize--------------------/
+// в стиль шрифта пишем @include adaptiv-font(40, 24)
+// 40 - размер шрифта при полном разрешении
+// 24 - размер шрифта при мобильном разрешении
+$maxWidth: 1280;
+@mixin adaptiv-font($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 320;
+	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+
+
+
+// px to rem
+@function rem($pixels, $context: $mainFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $context * 1rem;
+}
+
+// size to one line
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+// placeholder helper
+@mixin placeholder {
+  ::-webkit-input-placeholder {
+    @content;
+  }
+  :-moz-placeholder {
+    @content;
+  }
+  ::-moz-placeholder {
+    @content;
+  }
+  :-ms-input-placeholder {
+    @content;
+  }
+}
+
+
+@mixin font-face(
+  $font-family,
+  $file-path,
+  $weight: normal,
+  $style: normal,
+  $asset-pipeline: false
+) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $weight;
+    font-style: $style;
+
+    src: url("#{$file-path}.woff") format("woff"),
+      url("#{$file-path}.woff2") format("woff2");
+  }
+}
+
+
+
+
+
+@mixin anim($time, $delay) {
+	-webkit-transition: all $time ease $delay;
+	-moz-transition: all $time ease $delay;
+	-ms-transition: all $time ease $delay;
+	-o-transition: all $time ease $delay;
+	transition: all $time ease $delay;
+}
+@mixin anim_cubic($time, $delay) {
+	-webkit-transition: all $time cubic-bezier(0.68, -0.55, 0.265, 1.55) $delay;
+	-moz-transition: all $time cubic-bezier(0.68, -0.55, 0.265, 1.55) $delay;
+	-ms-transition: all $time cubic-bezier(0.68, -0.55, 0.265, 1.55) $delay;
+	-o-transition: all $time cubic-bezier(0.68, -0.55, 0.265, 1.55) $delay;
+	transition: all $time cubic-bezier(0.68, -0.55, 0.265, 1.55) $delay;
+}
+@mixin animate($name, $time, $infinite, $type) {
+	-webkit-animation: $name $time + s $infinite $type;
+	-moz-animation: $name $time + s $infinite $type;
+	-o-animation: $name $time + s $infinite $type;
+	animation: $name $time + s $infinite $type;
+}
+@mixin rotate($deg) {
+	-moz-transform: rotate($deg);
+	-ms-transform: rotate($deg);
+	-webkit-transform: rotate($deg);
+	-o-transform: rotate($deg);
+	transform: rotate($deg);
+}
+@mixin scale($num) {
+	-moz-transform: scale($num);
+	-ms-transform: scale($num);
+	-webkit-transform: scale($num);
+	-o-transform: scale($num);
+	transform: scale($num);
+}
+@mixin skew($num) {
+	-webkit-transform: skewX($num);
+	-moz-transform: skewX($num);
+	-ms-transform: skewX($num);
+	-o-transform: skewX($num);
+	transform: skewX($num);
+}
+@mixin cnt($h) {
+	display: flex;
+	flex-direction: column;
+	height: $h;
+	text-align: center;
+	align-items: stretch;
+	justify-content: center;
+}
+@mixin tr($x, $y, $z) {
+	transform: translate3d($x, $y, $z);
+	-webkit-transform: translate3d($x, $y, $z);
+	-ms-transform: translate3d($x, $y, $z);
+	-o-transform: translate3d($x, $y, $z);
+	-moz-transform: translate3d($x, $y, $z);
+}
+@mixin flexbox() {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	font-size: 0;
+}
+@mixin flexboxinline() {
+	display: -webkit-inline-flex;
+	display: -moz-inline-flex;
+	display: -ms-inline-flex;
+	display: -o-inline-flex;
+	display: inline-flex;
+}
+@mixin flexorder($val) {
+	-webkit-box-ordinal-group: $val;
+	-moz-box-ordinal-group: $val;
+	-ms-flex-order: $val;
+	-webkit-order: $val;
+	order: $val;
+}
+/*====================== КОНЕЦ М И К С И Н Ы ===========================*/
+
+
+// For Modern format fonts + .svg
+// Files Required: .woff, .woffs, .svg
+
+
+// @mixin font-face(
+//   $font-family,
+//   $file-path,
+//   $weight: normal,
+//   $style: normal,
+//   $asset-pipeline: false
+// ) {
+//   @font-face {
+//     font-family: $font-family;
+//     font-weight: $weight;
+//     font-style: $style;
+
+//     src: url("#{$file-path}.eot?#iefix") format("embedded-opentype"),
+//       url("#{$file-path}.woff") format("woff"),
+//       url("#{$file-path}.woff2") format("woff2"),
+//       url("#{$file-path}.svg") format("svg"),
+//       url("#{$file-path}.ttf") format("truetype");
+//   }
+// }
+
+// For Modern format fonts + .svg
+// Files Required: eot. .woff, .woffs, .svg, .ttf
+
+// @mixin font-face(
+//   $font-family,
+//   $file-path,
+//   $weight: normal,
+//   $style: normal,
+//   $asset-pipeline: false
+// ) {
+//   @font-face {
+//     font-family: $font-family;
+//     font-weight: $weight;
+//     font-style: $style;
+//     src: url("#{$file-path}.eot?#iefix") format("embedded-opentype"),
+//       url("#{$file-path}.woff") format("woff"),
+//       url("#{$file-path}.woff2") format("woff2"),
+//       url("#{$file-path}.svg") format("svg"),
+//       url("#{$file-path}.ttf") format("truetype");
+//   }
+// }
+
+// Fonts Helpers:
+//    Read more: https://github.com/vedees/webpack-template/blob/master/README.md#add-fonts
+//    ========================================================================== 
+
+
+//   By default template support only modern format fonts
+//   Without svg. Only: .woff, .woffs
+//   if ypu need svg comments lines bellow and uncomments "Fonts helper all format fonts"
+
+//   Usage:
+//     1. Put your font to `src/assets/fonts/FOLDERNAME/FONTNAME`
+//       FOLLOW: Files Required
+//       Example: .woff, .woffs formats
+//     2. Go to fonts.scss
+//     3. Use mixon
+//       Example: @include font-face("OpenSans", "../fonts/OpenSans/opensans");
+
+//     Required parameters: @family, @family
+//     Minor parameters: @weight, @style, @pipeline
+
+//     Example Base:
+//       @include font-face("OpenSans", "../fonts/OpenSans/opensans");
+//     Example Situation:
+//       @include font-face("OpenSans", "../fonts/OpenSans/opensansItalic", 400, italic);
+
+
+// Default: For modern format fonts
+// Files Required: .woff, .woffs

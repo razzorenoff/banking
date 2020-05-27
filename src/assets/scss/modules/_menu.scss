@@ -1,0 +1,335 @@
+/*==================ВЕРХНЕЕ СЕРОЕ МЕНЮ, ТЕЛЕФОН==================*/
+
+.block {
+	display: flex;
+	justify-content: space-between;
+	// z-index: 1;
+
+	// .block__greymenu
+
+	&__greymenu {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		@media (max-width: 767px) {
+			padding: 10px 20px 0px 0px;
+		}
+
+
+		// .block__greymenu_left
+		&_left {
+			display: flex;
+			height: 75px;
+			flex-wrap: nowrap;
+		}
+
+		// .block__greymenu_right
+		&_right {
+			display: flex;
+			height: 75px;
+			flex-wrap: nowrap;
+		}
+	}
+
+	// .block__element
+
+	&__element {
+		font-family: Graphik;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 13px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: #8890a1;
+		margin: 45px 40px 0px 0px;
+		white-space: nowrap;
+	}
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.block {
+	// .block__fhone
+
+	&__fhone {
+		display: flex;
+		margin-right: 0px;
+	}
+}
+
+.content {
+	// .content__fhone
+
+	&__fhone {
+		display: flex;
+		color: #ff5d39;
+		font-weight: 500;
+		white-space: nowrap;
+	}
+}
+a:hover {
+	color: #003db1;
+}
+
+/*=================ЛОГОТИП===============*/
+
+.header__logo {
+	display: block;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	background-image: url(../img/logo.png);
+	margin: 15px 51px 12px 0px;
+	align-content: center;
+	//flex: 0 0 48px;
+	overflow: hidden;
+	position: relative;
+	z-index: 3;
+}
+
+
+
+.header {
+	position: relative;
+	width: 100%;
+	//top: 0;
+	//left: 0;
+	z-index: 50;
+
+	.header:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #5e5373;
+		z-index: 2;
+	}
+	
+}
+
+/*================ ВЫПАДАЮЩЕЕ М Е Н Ю =================*/
+
+.header__body {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	//height: 80px;
+	align-items: center;
+}
+
+.header__menu {
+	width: 100%;
+	position: relative;
+	margin: auto;
+	font-family: Graphik;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 14px;
+	text-decoration: none;
+}
+.header__list {
+	display: flex;
+	//position: relative;
+	z-index: 2;
+
+}
+
+.header__list li {
+	// list-style: none;
+	margin: 0px 0px 20px 0px;
+}
+
+.header__link {
+	font-weight: 500;
+	color: rgb(0, 0, 0);
+	margin: 23px 48px 0px 0px;
+}
+
+/*--------------burger-------------*/
+.header__burger {
+	display: none;
+	//border: 1px solid green;
+
+}
+
+@media (max-width: 767px) {
+	body.lock {
+		overflow: hidden;
+	}
+	.block__greymenu_right{
+		display: none;
+	}
+	.block__greymenu_left{
+		display: none;
+	}
+
+	// .logoburger{
+	// 	display: flex;
+	// 	width: 100%;
+	// 	justify-content: space-between;
+	// }
+	.header__burger {
+		display: block;
+		position: relative;
+		margin-top: 30px;
+		width: 30px;
+		height: 20px;
+		z-index: 3;
+	}
+	.header__burger span {
+		position: absolute;
+		background-color: #003db1;
+		position: absolute;
+		right: 0;
+		width: 100%;
+		height: 2px;
+		top: 9px;
+		transition: all 0.3s ease 0s;
+	}
+	.header__burger:before,
+	.header__burger:after {
+		content: "";
+		background-color: #003db1;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		right: 0;
+		transition: all 0.3s ease 0s;
+	}
+	.header__burger:before {
+		top: 0;
+	}
+	.header__burger:after {
+		bottom: 0;
+	}
+
+	.header__burger.active span {
+		transform: scale(0);
+	}
+
+	.header__burger.active:before {
+		transform: rotate(45deg);
+		top: 9px;
+	}
+	.header__burger.active:after {
+		transform: rotate(-45deg);
+		bottom: 9px;
+	}
+	// .block__element, .block__greymenu{
+	// 	display: none;
+
+	// }
+	.header__menu {
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		transition: all 0.3s ease 0s;
+		background-color: white;
+		padding: 70px 10px 20px 10px;
+	}
+
+	.header__menu.active {
+		top: 0;
+	}
+
+	.header__list {
+		display: block;
+	}
+	.header__list li {
+		margin: 0px 0px 20px 0px;
+	}
+	.header__link {
+		font-size: 14px;
+	}
+	// .block__greymenu{
+	// 	display: inline;
+	// 	z-index: 49;
+	// }
+}
+/*-----------end of burger--------*/
+
+.submenu-list {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 40px;
+	background-color: white;
+	min-height: 395px;
+	height: auto;
+	width: 100%;
+	margin: auto;
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+
+	@media (max-width: 767px) {
+		.button {
+			height: 45px;
+			text-align: center;
+			width: 100%;
+		}
+		.submenu-img {
+			max-width: 281px;
+			text-align: center;
+		}
+		
+	}
+
+	hr {
+		margin: 17px 0px 28px 0px;
+	}
+}
+.submenu-container {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+}
+.submenu-collumn {
+	align-self: flex-start;
+}
+.submenu-link {
+	font-weight: 200;
+	color: #003db1;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+.h3 {
+	color: black;
+	font-weight: 500;
+	text-align: center;
+	margin: 13px 0px 0px 0px;
+	align-items: flex-end;
+}
+
+.submenu-img {
+	max-width: 281px;
+}
+
+.button {
+	background-color: #003db1;
+	width: 281px;
+	height: 70px;
+	color: white;
+	@include adaptiv-font(14, 11);
+	//font-size: 1.2em;
+	margin-bottom: 20px;
+}
+
+//отображение выпадающего меню при наведении мышью и блокировка body
+body.mouse .header__list > li:hover .submenu-list {
+	display: block;
+}
+//отображение выпадающего меню при нажатии на тачскрине телефона и блокировка body (см. script.js)
+body.touch .submenu-list.open {
+	display: block;
+}
+/*====================   К О Н Е Ц  ВЫПАДАЮЩЕГО М Е Н Ю =======================*/

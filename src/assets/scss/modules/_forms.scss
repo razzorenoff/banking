@@ -1,0 +1,38 @@
+/* ================= ФОРМА ПОИСКА ================= */
+
+form {
+	flex: 1 1 auto;
+	position: relative;
+	margin-top: 22px;
+	vertical-align: middle;
+}
+input {
+	width: 0;
+	padding: 0 30px 0 0px;
+	background: none;
+	transition: 0.4s cubic-bezier(0, 0.8, 0, 1);
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 7;
+}
+input:focus {
+	width: 160px;
+	z-index: 6;
+	border-bottom: 1px solid rgba(136, 144, 161, 0.2);
+}
+.buttonsearch {
+	background: transparent;
+	position: absolute;
+	top: 0px;
+	right: 0;
+	cursor: pointer;
+}
+.buttonsearch:before {
+	content: "\f002";
+	font-family: FontAwesome;
+	font-size: 18px;
+	color: #8890a1;
+}
+
+/* ================= КОНЕЦ ФОРМЫ ПОИСКА ================= */

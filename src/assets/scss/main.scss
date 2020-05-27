@@ -1,0 +1,133 @@
+@import "modules/libs";
+@import "modules/vars";
+@import "modules/mixins";
+@import "modules/fonts";
+@import "modules/reset";
+@import "modules/_header";
+@import "modules/_forms";
+@import "modules/_menu";
+@import "modules/_body";
+@import "modules/_footer";
+//@import "modules/adaptiveFont";
+//@import "modules/_ui";
+
+// Modules:
+// example: @import "modules/my-module.scss";
+
+
+//<Шрифт по умолчанию>==========================================================================================
+$fontfamily: "Graphik";
+//<ПЕРЕМЕННЫЕ>===========================================================================================================
+$minwidth: 320px;
+$mw: 1170;
+$md1: $mw + 12;
+$md2: 1030.98;
+$md3: 767.98;
+$md4: 479.98;
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+
+body {
+  color: rgb(255, 255, 255);
+	font-size: 14px;
+	&.lock {
+		overflow: hidden;
+	}
+
+  margin: 0;
+  padding: 0;
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+  padding: 0;
+	margin: 0;
+	border: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+
+//<ОБОЛОЧКА>===========================================================================================================
+html {
+  line-height: $mainLineHeight;
+  font-size: $mainFontSize;
+  color: $mainFontColor;
+  height: 100%;
+  // @media screen and (max-width: $desktopWidth) {
+  //   font-size: 16px;
+  // }
+  // @media screen and (max-width: $tableWidth) {
+  //   font-size: 15px;
+  // }
+  // @media screen and (max-width: $phoneWidth) {
+  //   font-size: 14px;
+  // }
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	//&.loaded {
+}
+//}
+//<ОСНОВНАЯ СЕТКА>===========================================================================================================
+.container {
+	font-family: Graphik;
+	color: #000000;
+	max-width: $mw + px;
+	margin: 0 auto;
+	width: 100%;
+	@media (max-width: $md1+px) {
+		max-width: 970px;
+	}
+	@media (max-width: $md2+px) {
+		max-width: 750px;
+	}
+	@media (max-width: $md3+px) {
+		max-width: none;
+		padding: 0 20px;
+	}
+}
+
+// section,
+// .section {
+//   position: relative;
+//   padding: 40px 0;
+//   @media screen and (max-width: $smDesktopWidth) {
+//     padding: 36px 0;
+//   }
+//   @media screen and (max-width: $tableWidth) {
+//     padding: 28px 0;
+//   }
+//   @media screen and (max-width: $phoneWidth) {
+//     padding: 20px 0;
+//   }
+// }

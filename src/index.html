@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+
+<head>
+  <!-- иконка для формы поиска -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Подключаем файл стилей-->
+  <link rel="stylesheet" href="./assets/css/main.css" type="text/css">
+  <link rel="stylesheet" href="./assets/fonts/fonts.css" type="text/css">
+
+
+  <!-- Заголовок страницы в браузере -->
+  <title>Банкинг</title>
+  <link rel="shortcut icon" href="./static/favicon.ico">
+
+  <meta>
+  <!--ДЛЯ БРАУЗЕРОВ-->
+  <!-- Кодировка страницы -->
+  <meta charset=" UTF-8">
+  <!-- Адаптивность  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!-- Отключает формирование ссылки у номера телефона на iOS -->
+  <meta name="format-detection" content="telefone=no">
+  <!-- Краткое описание страницы  -->
+  <meta name="description" content="про Банкинг">
+  <!-- Ключевые слова страницы  -->
+  <meta name="keywords" content="20 ключевых слов сайта">
+  <!-- Запрет индексации поисковиками страницы полностью -->
+  <meta name="robots" content="none">
+  <!-- Автор страницы -->
+  <meta name="Author" content="Владимир">
+  <!-- Авторские права -->
+  <meta name="Copyright" content="Владимир">
+  <!-- Адрес автора -->
+  <meta name="Address" content="Краснодар">
+
+  <!--ДЛЯ СОЦ.СЕТЕЙ-->
+  <!-- локализация сайта, для русскоязычного сайта ru_RU -->
+  <meta property="og:locale" content="ru_RU">
+  <!-- тип контента, по умолчанию используется article -->
+  <meta property="og:type" content="article">
+  <!-- заголовок страницы, который будет выводится в записи социальной сети -->
+  <meta property="og:title" content="Банкинг">
+  <!-- описание страницы -->
+  <meta property="og:description" content="про Банкинг">
+  <!-- ссылка на изображение, которое будет публиковаться в записи -->
+  <meta property="og:image" content="http://./assets/img/logo.png">
+  <!-- ссылка на текущую страницу -->
+  <meta property="og:url" content="http://../index.html">
+  <!-- название сайта -->
+  <meta property="og:site_name" content="Банкинг">
+
+  <!-- Тип карты, по умолчанию используется summary -->
+  <meta name="twitter:card" content="summary">
+  <!-- Имя/логин автора -->
+  <meta name="twitter:site" content="Владимир">
+  <!-- Название страницы -->
+  <meta name="twitter:title" content="Банкинг">
+  <!-- Описание страницы -->
+  <meta name="twitter:description" content="про Банкинг">
+  <!-- Cсылка на изображение -->
+  <meta name="twitter:image" content="http://./assets/img/logo.png">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div id="app">
+      <header class="header">
+
+        <!--логотип, верхнее серое меню, телефон-->
+        <div class="header__body">
+          <div class="container">
+            <div class="block">
+              <div>
+                <a href=index.html class="header__logo"></a>
+              </div>
+              <div class="block__greymenu">
+                <div class="block__greymenu_left">
+                  <div data-da="header__menu,2,767" class="block__element block_graymenu">
+                    <div class=""><a href="">private banking</a></div>
+                  </div>
+                  <div data-da="header__menu,3,767" class="block__element block_graymenu">
+                    <div class=""><a href="">о банке</a></div>
+                  </div>
+                </div>
+                <div class="block__greymenu_right">
+                  <div data-da="header__menu,4,767" class="block__element block_graymenu">
+                    <div class=""><a href="">офисы и банкоматы</a></div>
+                  </div>
+                  <div data-da="header__menu,5,767" class="block__element block_graymenu">
+                    <div class=""><a href="">en</a></div>
+                  </div>
+                </div>
+              </div>
+
+              <div data-da="header__menu,6,767" class="block__fhone">
+                <div class="block__element block__fhone">
+                  <div class="content__fhone"><a href="tel:+74959568626">+7 495 956 86 26</a></div>
+                </div>
+              </div>
+
+              <!--burger меню-->
+              <div class="header__burger">
+                <span></span>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+
+        <!--разделяющая линия-->
+        <a class="hr">
+          <hr></a>
+
+
+        <!--dropdown меню-->
+        <div class="header__body ">
+
+          <nav class="header__menu ">
+            <ul class="header__list container">
+              <li>
+                <p href="" class="header__link">Частным клиентам</p>
+                <ul class="submenu-list ">
+                  <a class="hr">
+                    <hr></a>
+                  <div class="container submenu-container">
+                    <div class="submenu-collumn">
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Платежный сервис</a></p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Монеты</a></p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Вклады</a></p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Банковские карты</a></p>
+                      </li>
+                    </div>
+                    <div class="submenu-collumn">
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Кредитование физических лиц</a></p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Операции с наличной иностранной валютой</a>
+                        </p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Тарифы</a></p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Текущие счета</a></p>
+                      </li>
+                    </div>
+                    <div class="submenu-collumn">
+                      <div class="submenu-img"><img src="./assets/img/top4.png" alt=""></div>
+                      <p class="h3">Интернет-банк для частных лиц</p>
+                      <button class="button">Войти в личный кабинет</button>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li>
+                <p href="" class="header__link">Корпоративным клиентам</p>
+                <ul class="submenu-list">
+                  <a class="hr">
+                    <hr></a>
+                  <div class="container submenu-container">
+                    <div class="submenu-collumn">
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Интернет-банк</a></p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Расчетно-кассовое обслуживание</a></p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Как стать клиентом</a></p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Кредитные сделки</a></p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Тарифы</a></p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Валютный контроль</a></p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Управление проектного и структурного
+                            финансирования</a></p>
+                      </li>
+
+                    </div>
+                    <div class="submenu-collumn">
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Корпоративное финансирование</a></p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Организация операционно-кассового
+                            подразделения</a>
+                        </p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Войти в интернет-банк для юридических лиц</a>
+                        </p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Векселя</a></p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Торговое финансирование и экспортно-импортные
+                            операции</a></p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Инкассация</a></p>
+                      </li>
+
+                    </div>
+                    <div class="submenu-collumn">
+                      <div class="submenu-img"><img src="./assets/img/top5.png" alt=""></div>
+                      <p class="h3">Интернет-банк для юридических лиц</p>
+                      <button class="button">Войти в личный кабинет</button>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li>
+                <p href="" class="header__link">Услуги на рынке ценных бумаг</p>
+                <ul class="submenu-list">
+                  <a class="hr">
+                    <hr></a>
+                  <div class=" container submenu-container">
+                    <div class="submenu-collumn">
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Брокерское обслуживание</a></p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Документы</a></p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Прямой доступ на валютный рынок</a></p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Облигации</a></p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Еврооблигации</a></p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Тарифы</a></p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Интернет-трейдинг QUIK</a></p>
+                      </li>
+
+                    </div>
+                    <div class="submenu-collumn">
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Интернет-трейдинг TRANSAQ</a></p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Войти в личный кабинет</a></p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Дипозитарные услуги</a></p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Открыть счет</a></p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Рынки</a></p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Непокрытые сделки</a></p>
+                      </li>
+                      <li>
+                        <p class="submenu-link"><a href="" class="">Контакты</a></p>
+                      </li>
+
+                    </div>
+                    <div class="submenu-collumn">
+                      <div class="submenu-img"><img src="./assets/img/top6.png" alt=""></div>
+                      <p class="h3">Услуги на рынке ценных бумаг</p>
+                      <button class="button">Войти в личный кабинет</button>
+                      </<a>
+                    </div>
+                  </div>
+
+                </ul>
+              </li>
+              <form data-da="block__greymenu,1,767">
+                <input type="text" placeholder="Искать...">
+                <button class="buttonsearch" type="submit"></button>
+              </form>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- СЛАЙДЕР -->
+      <div class="mainscreen">
+        <div class="container">
+          <div class="slider">
+            <div class="content-slider__left">
+              <h1>Центр для успешных инвестиций</h1>
+              <h2>Вы сможете выплатить банковский долг, <br>даже в случае неблагоприятных жизненных
+                обстоятельств</h2>
+              <button class="button">Подать заявку</button>
+              <h3 class="pagination"><img src="./assets/img/Pagination.png" alt=""></h3>
+            </div>
+            <div class="content-slider__right">
+              <div class="slider__image">
+                <img src="./assets/img/chuvak.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!--текст УСЛУГИ...-->
+      <div class="container">
+        <p class="title">Услуги на рынке ценных бумаг</p>
+      </div>
+
+      <!--4 блока с фото и ссылками-->
+      <div class="container">
+        <!--2 блока БРОКЕРСКОЕ ОБСЛУЖИВАНИЕ и ЕВРООБЛИГАЦИИ-->
+        <div class="fotolink-content">
+          <!--брокерское обслуживание-->
+          <div class="block-and-arrow">
+            <div class="fotolink-left">
+              <div class="fotolink-title">
+                <div class="title-top">Брокерское обслуживание</div>
+                <div class="title-middle">Персональное брокерское обслуживание в банке</div>
+                <div class="title-buttom">Бесплатный ввод и вывод денежных средств (российские рубли в наличной и
+                  безналичной форме)</div>
+              </div>
+            </div>
+            <div class="block-arrow">
+              <div class=""><a href="">Подать заявку</a></div>
+              <div class=""><img src="./assets/img/arrow.png" alt=""></div>
+            </div>
+          </div>
+          <!--еврооблигации-->
+          <div class="block-and-arrow">
+            <div class="fotolink-right">
+              <div class="fotolink-title">
+                <div class="title-top">Еврооблигации</div>
+                <div class="title-middle">Еврооблигации для всех. Продажа еврооблигаций</div>
+                <div class="title-buttom">Фиксированная доходность выше, чем по банковскому вкладу</div>
+              </div>
+            </div>
+            <div class="block-arrow">
+              <div class=""><a href="">Подать заявку</a></div>
+              <div class=""><img src="./assets/img/arrow.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+        <!--КОНЕЦ---блоки БРОКЕРСКОЕ ОБСЛУЖИВАНИЕ и ЕВРООБЛИГАЦИИ-->
+
+        <!--заголовки блоков КУРС валют и МОНЕТЫ-->
+        <!--КОНЕЦ ---заголовки блоков КУРС валют и МОНЕТЫ-->
+
+        <!--2 блока КУРС ВАЛЮТ и МОНЕТЫ-->
+        <div class="money container">
+          <div class="exchange fotolink-content">
+            <div class="container-title">
+              <!--заголовок ВАЛЮТЫ-->
+              <div class="exchange-monets-title">
+                <div class="block-first-title">
+                  <div><img src="./assets/img/exchange-icon.svg" alt=""></div>
+                  <div>
+                    <p class="first-title">Валюта</p>
+                  </div>
+                  <div>
+                    <p class="date">18.07.2019</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--КУРС ВАЛЮТ-->
+            <div class="block-and-arrow">
+              <div class="fotolink-left">
+                <div class="block-foto">
+                  <img src="./assets/img/currency-exchange.PNG" alt="">
+                </div>
+              </div>
+              <div class="block-arrow">
+                <div class=""><a href="">Курсы валют</a></div>
+                <div class=""><img src="./assets/img/arrow.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="exchange fotolink-content ">
+
+            <!--заголовок МОНЕТЫ-->
+            <div class="container-title">
+              <div class="exchange-monets-title">
+                <div class="block-first-title">
+                  <div><img src="./assets/img/monets-icon.svg" alt=""></div>
+                  <div>
+                    <p class="first-title">Монеты из драгоценных металлов</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--МОНЕТЫ-->
+            <div class="block-and-arrow">
+              <div class="fotolink-right">
+                <div class="block-foto">
+                  <img src="./assets/img/monets.PNG" alt="">
+                </div>
+              </div>
+              <div class="block-arrow">
+                <div class=""><a href="">Каталог монет</a></div>
+                <div class=""><img src="./assets/img/arrow.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--КОНЕЦ---блоки КУРС ВАЛЮТ и МОНЕТЫ-->
+      </div>
+      <!--КОНЕЦ ---4 блока с фото и ссылками-->
+
+      <!-- блок КАРТЫ -->
+      <div class="container">
+        <div class="block-cards">
+          <div class="slider-left">
+            <div class="textcard">
+              <h1 class="h1">Переводите с карты на карту</h1>
+
+              <h2 class="h2">Быстрый и удобный способ перевести денежные средства. <br>Узнайте о <a class="textlink"
+                  href="">лимитах и комиссиях</a></h2>
+            </div>
+            <button class="button">Перевести</button>
+          </div>
+        </div>
+      </div>
+
+      <!--сайдбар1-->
+      <div class="container">
+        <div class="sidebar-row">
+          <div class="sidebar-column-1">
+            <div class="sidebar-text">
+              <div>
+                <h1 class="h1">Прямой доступ на валютный рынок</h1>
+                <h2 class="h2">Зарабатывайте на колебаниях курсов мировых валют</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-element-1">
+            <div class="sidebar-text">
+              <div>
+                <h1 class="h1">Защитные признаки банкнот Банка России</h1>
+                <h2 class="h2">Признаки подлинности, контролируемые <br>с использованием х8-х10 лупы</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--сайдбар2-->
+      <div class="container">
+        <div class="sidebar-row">
+          <div class="sidebar-element-2">
+            <div class="sidebar-text">
+              <div>
+                <h1 class="h1">До +0,5% годовых при дистанционном оформлении</h1>
+                <h2 class="h2">Начался прием карт МИР <br>по выдаче наличных в сети <br>банкоматов и дополнительных
+                  <br>офисов.
+                </h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-column-2">
+            <div class="sidebar-text">
+              <div>
+                <h1 class="h1">Бесконтактная карта MasterCard </h1>
+                <h2 class="h2">Вы можете гораздо быстрее произвести оплату на АЗС, парковке, в кафе или в магазине
+                  одним касанием!</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--текст НОВОСТИ...-->
+      <div class="container">
+        <p class="title">Новости</p>
+      </div>
+
+      <!--блок НОВОСТИ...-->
+      <div class="rss-row container">
+        <div class="rss-column">
+          <div class="news">
+            <p class="news-date">26 июня 2019 года</p>
+            <p class="news">Предварительные выводы неутешительны: курс на социально-ориентированный национальный
+              проект </p>
+          </div>
+          <div class="news">
+            <p class="news-date">26 июня 2019 года</a>
+            <p class="news">Предварительные выводы неутешительны: курс на социально-ориентированный
+              национальный
+              проект </p>
+          </div>
+          <div class="news">
+            <p class="news-date">26 июня 2019 года</p>
+            <p class="news">Предварительные выводы неутешительны: курс на социально-ориентированный национальный
+              проект </p>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <!-- ПОДВАЛ -->
+      <footer class="footer">
+        <div class="footer-row container">
+
+            <div class="footer-link">
+              <p class="title-top">Раскрытие информации</p>
+              <p class="title-link"><a class="">Реквизиты</a></p>
+              <p class="title-link"><a class="">Раскрытие информации</a></p>
+              <p class="title-link"><a class="">Процентные ставки по вкладам физ. лиц</a>
+              <p class="title-link"><a class="">Список лиц, под контролем либо значительным влиянием которых
+                  находится Банк</a></p>
+            </div>
+            <div class="footer-link">
+              <p class="title-top">Частным клиентам</p>
+              <p class="title-link"><a class="">Банковские карты</a></p>
+              <p class="title-link"><a class="">Вклады</a></p>
+              <p class="title-link"><a class="">Тарифы</a></p>
+              <p class="title-link"><a class="">Защитные признаки банкнот Банка России</a></p>
+            </div>
+            <div class="footer-link">
+              <p class="title-top">Корпоративным клиентам</p>
+              <p class="title-link"><a class="">Как стать клиентом</a></p>
+              <p class="title-link"><a class="">Кредитование</a></p>
+              <p class="title-link"><a class="">Интернет-банк</a>
+            </div>
+            <div class="footer-link">
+              <p class="title-top">Услуги на РЦБ</p>
+              <p class="title-link"><a class="">Доступ на валютный рынок</a></p>
+              <p class="title-link"><a class="">Брокерское обслуживание</a></p>
+              <p class="title-link"><a class="">Открыть брокерский счет</a></p>
+              <p class="title-link"><a class="">Еврооблигации</a></p>
+              <p class="title-link"><a class="">Торговля на ММВБ</a></p>
+              <p class="title-link"><a class="">Облигации</a></p>
+              <p class="title-link"><a class="">QUIK трейдинг</a></p>
+              <p class="title-link"><a class="">Transaq</a></p>
+            </div>
+
+        </div>
+      </footer>
+    </div> <!-- end #app wrapper -->
+  </div> <!-- end main wrapper -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="./js/data-da.js"></script>
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>
