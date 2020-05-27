@@ -108,12 +108,12 @@
 		.fotolink-left {
 			display: flex;
 			background: #acaccd;
-			background: url(/src/assets/img/top1.png) no-repeat right bottom #acaccd;
+			background: url(./src/assets/img/top1.png) no-repeat right bottom #acaccd;
 			height: 360px;
 		}
 		.fotolink-right {
 			display: flex;
-			background: url(/src/assets/img/top2.png) no-repeat right bottom #bea08b;
+			background: url(./src/assets/img/top2.png) no-repeat right bottom #bea08b;
 			height: 360px;
 		}
 	}
@@ -211,7 +211,7 @@
 
 .block-cards {
 	display: flex;
-	background: url(/src/assets/img/cards.png) no-repeat right bottom rgba(136, 144, 161, 0.1);
+	background: url(./src/assets/img/cards.png) no-repeat right bottom rgba(136, 144, 161, 0.1);
 	margin: 30px 0px 30px 0px;
 
 	height: 270px;
@@ -250,7 +250,7 @@
 
 .sidebar-column-1 {
 	display: flex;
-	background: url(/src/assets/img/fhone.png) #f4f4f6 no-repeat right bottom;
+	background: url(./src/assets/img/fhone.png) #f4f4f6 no-repeat right bottom;
 	flex: 1 1 auto;
 	margin: 0 30px 30px 0;
 	height: 370px;
@@ -258,7 +258,7 @@
 
 .sidebar-column-2 {
 	display: flex;
-	background: url(/src/assets/img/rock1.png) #f4f4f6 no-repeat right bottom;
+	background: url(./src/assets/img/rock1.png) #f4f4f6 no-repeat right bottom;
 	flex: 1 1 auto;
 	margin: 0 0 30px 30px;
 	height: 370px;
@@ -271,13 +271,13 @@
 
 .sidebar-element-1 {
 	flex: 0 0 350px;
-	background: url(/src/assets/img/capitel.png) #f4f4f6 no-repeat right bottom;
+	background: url(./src/assets/img/capitel.png) #f4f4f6 no-repeat right bottom;
 	margin: 0 0 30px 0px;
 }
 
 .sidebar-element-2 {
 	flex: 0 0 350px;
-	background: url(/src/assets/img/top3.png) #f4f4f6 no-repeat right bottom;
+	background: url(./src/assets/img/top3.png) #f4f4f6 no-repeat right bottom;
 	margin: 0 0 30px 0;
 }
 
