@@ -813,7 +813,7 @@ body.touch .submenu-list.open {
   display: -ms-flexbox;
   display: flex;
   background: #acaccd;
-  background: url(/src/assets/img/top1.png) no-repeat right bottom #acaccd;
+  background: url(./src/assets/img/top1.png) no-repeat right bottom #acaccd;
   height: 360px;
 }
 
@@ -822,7 +822,7 @@ body.touch .submenu-list.open {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background: url(/src/assets/img/top2.png) no-repeat right bottom #bea08b;
+  background: url(./src/assets/img/top2.png) no-repeat right bottom #bea08b;
   height: 360px;
 }
 
@@ -962,7 +962,7 @@ body.touch .submenu-list.open {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background: url(/src/assets/img/cards.png) no-repeat right bottom rgba(136, 144, 161, 0.1);
+  background: url(./src/assets/img/cards.png) no-repeat right bottom rgba(136, 144, 161, 0.1);
   margin: 30px 0px 30px 0px;
   height: 270px;
 }
@@ -1025,7 +1025,7 @@ body.touch .submenu-list.open {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background: url(/src/assets/img/fhone.png) #f4f4f6 no-repeat right bottom;
+  background: url(./src/assets/img/fhone.png) #f4f4f6 no-repeat right bottom;
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
@@ -1039,7 +1039,7 @@ body.touch .submenu-list.open {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background: url(/src/assets/img/rock1.png) #f4f4f6 no-repeat right bottom;
+  background: url(./src/assets/img/rock1.png) #f4f4f6 no-repeat right bottom;
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
@@ -1058,7 +1058,7 @@ body.touch .submenu-list.open {
   -webkit-flex: 0 0 350px;
       -ms-flex: 0 0 350px;
           flex: 0 0 350px;
-  background: url(/src/assets/img/capitel.png) #f4f4f6 no-repeat right bottom;
+  background: url(./src/assets/img/capitel.png) #f4f4f6 no-repeat right bottom;
   margin: 0 0 30px 0px;
 }
 
@@ -1067,7 +1067,7 @@ body.touch .submenu-list.open {
   -webkit-flex: 0 0 350px;
       -ms-flex: 0 0 350px;
           flex: 0 0 350px;
-  background: url(/src/assets/img/top3.png) #f4f4f6 no-repeat right bottom;
+  background: url(./src/assets/img/top3.png) #f4f4f6 no-repeat right bottom;
   margin: 0 0 30px 0;
 }
 
